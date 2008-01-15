@@ -71,12 +71,6 @@ version="2.4">
         <url-pattern>/*</url-pattern>
         <dispatcher>REQUEST</dispatcher>
     </filter-mapping>
-
-    <servlet>
-        <servlet-name>s2container</servlet-name>
-        <servlet-class>org.seasar.framework.container.servlet.S2ContainerServlet</servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
     
     <servlet>
         <servlet-name>action</servlet-name>
@@ -97,19 +91,25 @@ version="2.4">
             <param-name>detail</param-name>
             <param-value>2</param-value>
         </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>s2container</servlet-name>
+        <servlet-class>org.seasar.framework.container.servlet.S2ContainerServlet</servlet-class>
         <load-on-startup>2</load-on-startup>
     </servlet>
-
-    <servlet-mapping>
-        <servlet-name>s2container</servlet-name>
-        <url-pattern>/s2container</url-pattern>
-    </servlet-mapping>
   
     <servlet-mapping>
         <servlet-name>action</servlet-name>
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>s2container</servlet-name>
+        <url-pattern>/s2container</url-pattern>
+    </servlet-mapping>
+    
 	<!--
     <session-config>
         <session-timeout>1</session-timeout>
