@@ -112,9 +112,11 @@ version="2.4">
     </session-config>
 	-->
 
+	<!--
     <welcome-file-list>
     </welcome-file-list>
-    
+	-->
+
     <jsp-config>
     	<jsp-property-group>
     		<url-pattern>*.jsp</url-pattern>
