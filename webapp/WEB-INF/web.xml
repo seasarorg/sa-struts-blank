@@ -23,7 +23,7 @@ version="2.4">
 
     <context-param>
         <param-name>sastruts.VIEW_PREFIX</param-name>
-        <param-value>/WEB-INF/jsp</param-value>
+        <param-value>/WEB-INF/view</param-value>
     </context-param>
     
     <filter>
@@ -128,7 +128,7 @@ version="2.4">
     		<el-ignored>false</el-ignored>
     		<page-encoding>UTF-8</page-encoding>
     		<scripting-invalid>false</scripting-invalid>
-    		<include-prelude>/common/common.jsp</include-prelude>
+    		<include-prelude>/WEB-INF/view/common/common.jsp</include-prelude>
     	</jsp-property-group>
     </jsp-config>
 </web-app>
